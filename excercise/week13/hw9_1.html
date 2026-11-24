@@ -1,0 +1,28 @@
+<!--
+학번 : 202410905
+이름 : 한민
+과제설명 : DOM 실습
+-->
+<!DOCTYPE html>
+<head>
+  <title>DOM practice</title>
+  <meta charset="UTF-8">
+  <script>
+    let isOn = true;
+    function toggle() {
+      let sw = document.getElementById("switch");
+      if (isOn) {
+        sw.src = "sw_off.png"
+        isOn = false;
+      }
+      else {
+        sw.src = "sw_on.png"
+        isOn = true;
+      }
+    }
+  </script>
+</head>
+<body>
+  <img id="switch" onclick="toggle()" src="sw_on.png" alt="sw_on" width="100" height="100">
+  <p>스위치를 클릭하여 보세요!</p>
+</body>

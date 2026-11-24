@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>중간고사 연습</title>
+  <meta charset="utf-8">
+  <style>
+    th {
+      background-color: green;
+      color: white;
+    }
+    .odd:hover {
+      background-color: yellow;
+    }
+    .even:hover {
+      background-color: yellowgreen;
+    }
+    div {
+      padding: 20px 100px 20px 100px;
+      border-top: red solid 1px;
+      border-bottom: red solid 1px;
+      text-align: center;
+    }
+    div p {
+      display: inline;
+      margin: 10px;
+    }
+    #border_image {
+      border: 10px solid blue;
+      width: 300px;
+      height: 100px;
+      text-align: center;
+      border-image: url('soomung.png') 100 round;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="header">쇼핑 리스트</h1>
+  <p>특히 다음을 <strong>반드시</strong> 사와야 함.</p>
+  <ul>
+    <li>우유</li>
+    <li>토마토</li>
+    <li>수박</li>
+  </ul>
+  <a href="https://www.naver.com">네이버 링크</a>
+  <br>
+  <hr>
+  <div class="nav">
+    <p>HOME</p>
+    <p>BLOG</p>
+    <p>ABOUT</p>
+    <p>CONTACT</p>
+  </div>
+  <hr>
+  <table class="table">
+    <thead>
+      <tr width="100%">
+        <th width="10%">학번</th>
+        <th width="40%">이름</th>
+        <th width="30%">성적</th>
+        <th width="20%">학점</th>
+      </tr>
+    </thead>
+    <tr class="odd">
+      <td>1</td> <td>Bill</td> <td>98</td> <td>A+</td>
+    </tr>
+    <tr class="even">
+      <td>2</td> <td>Steve</td> <td>89</td> <td>B+</td>
+    </tr>
+    <tr class="odd">
+      <td>3</td> <td>Larry</td> <td>93</td> <td>A-</td>
+    </tr>
+  </table>
+  <hr>
+  <p>이것은 하나의 단락입니다.</p>
+  <p>이것은 두 번째 단락입니다.</p>
+  <a href="#header">제목으로 가고 싶으면 여기를 클릭하세요</a>
+  <hr>
+  <h2>Soomung Image</h2>
+    <a href="https://www.naver.com">
+      <img src="soomung.png" alt="sooming" width="300" height="200" alt="코딩하는 수뭉이">
+    </a>
+  <hr>
+  <table border="1"   >
+    <thead>
+      <tr>
+        <th colspan="5">시간표</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>mon</td>
+      <td>tue</td>
+      <td>wed</td>
+      <td>thu</td>
+      <td>fri</td>
+    </tr>
+    <tr>
+      <td>국어</td>
+      <td>수학</td>
+      <td>영어</td>
+      <td>과학</td>
+      <td rowspan="3">휴강</td>
+    </tr>
+    <tr>
+      <td colspan="4">점심시간</td>
+    </tr>
+    <tr>
+      <td>국어</td>
+      <td>수학</td>
+      <td>영어</td>
+      <td>과학</td>
+    </tr>
+  </table>
+  <form>
+    아이디: <input type="text" name="id", value="아이디를 입력하세요"><br>
+    비밀번호: <input type="password" name="password", value="비밀번호"><br>
+    <input type="submit" value="보내기">
+  </form>
+  <hr>
+  <p id="border_image">주변에 수뭉이들이 있어요</p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!--
+학번 : 202410905
+이름 : 한민
+과제설명 : String 객체 실습
+-->
+<!DOCTYPE html>
+<head>
+  <title>String practice</title>
+  <meta charset="UTF-8">
+  <script>
+    let str = prompt("문자열 입력")
+    let count = 0;
+
+    document.write("문장: " + str + "<br>");
+    document.write("길이: " + str.length + "<br>");
+
+    for (let i = 0; i <= str.length; i++) {
+      if (str.charAt(i) === 'a' || str.charAt(i) === 'A') {
+        count++;
+      }
+    }
+    document.write("a 또는 A의 개수 " + count + "<br>");
+    str = str.replaceAll("a", "*");
+    str = str.replaceAll("A", "*");
+    document.write(str)
+
+  </script>
+</head>
+<body>
+
+</body>
